@@ -6,7 +6,7 @@ const Videos = ({videos , direction}) => {
   // console.log(videos)
   if(!videos?.length) return "Loading..."
   return (
-    <Stack className='aman' direction={ direction || "row"} flexWrap='wrap' justifyContent='start' gap={2}>
+    <Stack className='aman' direction={ direction || "row"} flexWrap='wrap'  justifyContent={{md:'space-evenly', sm:'center'}} gap={3}>
     
       {
              
@@ -15,7 +15,7 @@ const Videos = ({videos , direction}) => {
 
           
 
-        return ( <Box  key={idx}>
+        return ( <Box   key={idx}>
             
             {/* {console.log(item)} */}
              
